@@ -1,43 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
   <title>Shriram | Digital Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: slideUp 1.5s ease;
+    }
+
+    h2 {
+      border-left: 5px solid #00e6e6;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.15);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
 </head>
+
 <body>
+
+<header>
   <h1>Shriram</h1>
-  <p>Computer Science Student</p>
+  <p>Computer Science Engineering Student</p>
+  <p>SRM University, Trichy</p>
+</header>
 
-  <h2>Career Objective</h2>
-  <p>
-    I aim to build a strong foundation in software development and contribute
-    positively to a team. I value discipline, continuous learning, and teamwork,
-    and I am interested in working with Japanese companies.
-  </p>
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a Computer Science Engineering student with a strong interest in
+      learning new technologies and improving my technical skills.
+      I am responsible, motivated, and eager to grow as a professional.
+    </p>
+  </div>
+</section>
 
-  <h2>日本語（初級）</h2>
-  <p>
-    日本語を勉強しています。<br>
-    将来、日本の会社で働きたいです。
-  </p>
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <p><strong>College:</strong> SRM University, Trichy</p>
+    <p><strong>Degree:</strong> B.Tech – Computer Science Engineering</p>
+  </div>
+</section>
 
-
+<section>
   <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-    <li>Java</li>
-    <li>SQL</li>
-    <li>HTML, CSS</li>
-  </ul>
+  <div class="card">
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>SQL</li>
+      <li>HTML & CSS</li>
+      <li>Basic Web Development</li>
+    </ul>
+  </div>
+</section>
 
-  <h2>Academic Experience</h2>
-  <p>
-    During my studies, I worked on academic tasks and small projects to understand
-    programming fundamentals, logical thinking, and problem-solving.
-  </p>
+<section>
+  <h2>Projects</h2>
 
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
+  <div class="card">
+    <h3>AI & IoT Based Traffic Density Monitoring System</h3>
+    <p>
+      A system designed to monitor traffic density using IoT sensors and AI-based
+      analysis to improve traffic signal efficiency.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>ClassCrate – AI Timetable Generator</h3>
+    <p>
+      An academic timetable generation system using Python and SQL
+      to avoid conflicts and optimize class schedules.
+    </p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Career Objective</h2>
+  <div class="card">
+    <p>
+      I aim to build a strong foundation in software development and
+      contribute positively to a professional team.
+      I am interested in working with Japanese companies
+      and value discipline, teamwork, and continuous learning.
+    </p>
+  </div>
+</section>
+
+  <section>
+<h2>日本語（Japanese Language）</h2>
+
+
+  <div class="card">
+ <p>
+  日本語を勉強しています。（初級レベル）<br>
+  簡単な自己紹介や基本的な日常会話が可能です。
+</p>
+
+<p>
+  将来、日本の会社で働きたいと考えています。<br>
+  日本の文化や仕事に対する姿勢に強い関心があります。
+</p>
+
+<p>
+  現在、日本語能力の向上を目標に継続して学習しています。
+</p>
+
+  </div>
+</section>
+
+
+<footer>
+  © 2026 Shriram | Digital Portfolio
+</footer>
+
 </body>
 </html>
-
